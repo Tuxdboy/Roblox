@@ -1,5 +1,5 @@
 function FindSpookWood()
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Tuxdboy/Roblox/main/Lumber%20Tycoon%202.lua"))()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Tuxdboy/Roblox/main/Lumber%20Tycoon%202/1.lua"))()
 end
 
 
