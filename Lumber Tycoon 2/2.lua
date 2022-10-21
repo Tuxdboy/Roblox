@@ -6,7 +6,7 @@ end
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local NewUI = Material.Load({
-	Title = "Lumber Tycoon 2 — By Xtrevious",
+	Title = "Lumber Tycoon 2 — By Tuxdboy",
 	Style = 1,
 	SizeX = 300,
 	SizeY = 115,
