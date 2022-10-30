@@ -3,11 +3,6 @@ function InfiniteYield()
 end
 
 function FindSpookWood()
-    repeat
-        wait(1)
-    until game:IsLoaded() --waits until game is loaded to execute script.
-    wait(10)
-    --clipboard function
     function toClipboard(String)
         local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
         if clipBoard then
@@ -17,7 +12,6 @@ function FindSpookWood()
             notify("Clipboard", "Your exploit doesn't have the ability to use the clipboard")
         end
     end
-    --spook tree finder
     local ToFind = "Spooky"
     local Tree
     for i, v in pairs(workspace:GetChildren()) do
@@ -32,7 +26,6 @@ function FindSpookWood()
             end
         end
     end
-    --copies the jobid to clipboard, and notifies if there is a spooky tree
     if Tree then
         local r = game.Players.LocalPlayer.Character.HumanoidRootPart
         r.CFrame = CFrame.new(Tree.WoodSection.Position)
@@ -48,7 +41,6 @@ function FindSpookWood()
         toClipboard(jobId)
     else
         if not tree then
-            --if there is no tree then it will notify that there isn't a tree, then it will serverhop.
             wait(1.2)
             game.StarterGui:SetCore(
                 "SendNotification",
@@ -59,7 +51,6 @@ function FindSpookWood()
                 }
             )
             print("There is no Spooky here.")
-            --serverhop script
             local module =
                 loadstring(game:HttpGet "https://raw.githubusercontent.com/Tuxdboy/Roblox/main/Lumber%20Tycoon%202/1.lua")()
             module:Teleport(game.PlaceId)
@@ -68,11 +59,6 @@ function FindSpookWood()
 end
 
 function FindSinisterWood()
-    repeat
-        wait(1)
-    until game:IsLoaded() --waits until game is loaded to execute script.
-    wait(1)
-    --clipboard function
     function toClipboard(String)
         local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
         if clipBoard then
@@ -82,8 +68,7 @@ function FindSinisterWood()
             notify("Clipboard", "Your exploit doesn't have the ability to use the clipboard")
         end
     end
-    --spook tree finder
-    local ToFind = "Sinister"
+    local ToFind = "SpookyGlow"
     local Tree
     for i, v in pairs(workspace:GetChildren()) do
         if v.Name == "TreeRegion" then
@@ -97,7 +82,6 @@ function FindSinisterWood()
             end
         end
     end
-    --copies the jobid to clipboard, and notifies if there is a spooky tree
     if Tree then
         local r = game.Players.LocalPlayer.Character.HumanoidRootPart
         r.CFrame = CFrame.new(Tree.WoodSection.Position)
@@ -113,7 +97,6 @@ function FindSinisterWood()
         toClipboard(jobId)
     else
         if not tree then
-            --if there is no tree then it will notify that there isn't a tree, then it will serverhop.
             wait(1.2)
             game.StarterGui:SetCore(
                 "SendNotification",
@@ -124,7 +107,6 @@ function FindSinisterWood()
                 }
             )
             print("There is no Sinister here.")
-            --serverhop script
             local module =
                 loadstring(game:HttpGet "https://raw.githubusercontent.com/Tuxdboy/Roblox/main/Lumber%20Tycoon%202/1.lua")()
             module:Teleport(game.PlaceId)
